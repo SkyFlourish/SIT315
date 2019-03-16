@@ -26,7 +26,6 @@ void loop() {
     digitalWrite(sensor_output, LOW);
   }
   delay(1000);
- 
-  // put your main code here, to run repeatedly:
 
+  // put your main code here, to run repeatedly:
 }
