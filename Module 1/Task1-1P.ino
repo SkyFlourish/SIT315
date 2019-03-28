@@ -17,7 +17,7 @@ void loop() {
   val = digitalRead(sensor_input);
   Serial.println(val);
 
-  if(val = HIGH)
+  if(val == HIGH)
   {
     digitalWrite(sensor_output, HIGH);
   }
@@ -26,6 +26,7 @@ void loop() {
     digitalWrite(sensor_output, LOW);
   }
   delay(1000);
-
+ 
   // put your main code here, to run repeatedly:
+
 }
