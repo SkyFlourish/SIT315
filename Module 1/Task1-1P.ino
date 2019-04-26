@@ -21,7 +21,7 @@ void loop() {
   {
     digitalWrite(sensor_output, HIGH);
   }
-  else
+  else if(val = LOW)
   {
     digitalWrite(sensor_output, LOW);
   }
