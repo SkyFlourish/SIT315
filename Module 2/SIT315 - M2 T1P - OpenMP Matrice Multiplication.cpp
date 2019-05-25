@@ -3,6 +3,7 @@
 #include <ctime>
 #include <omp.h>
 using namespace std;
+const int MAX = 825;
 
 int main()
 {
@@ -12,9 +13,9 @@ int main()
 	//unsigned int MAX = hardware_concurrency();
 	cout << "Please Enter the value of the square Matrices " << endl;
 	cin >> N;
-	int A[100][100];
-	int B[100][100];
-	int C[100][100];
+	int A[MAX][MAX];
+	int B[MAX][MAX];
+	int C[MAX][MAX];
     int thread_number = omp_get_max_threads();
 
 

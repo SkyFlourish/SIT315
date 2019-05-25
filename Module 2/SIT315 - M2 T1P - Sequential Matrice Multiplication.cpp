@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <ctime>
+const int MAX = 825;
 using namespace std;
 
 int main()
@@ -11,9 +12,9 @@ int main()
 	//unsigned int MAX = hardware_concurrency();
 	cout << "Please Enter the value of the square Matrices " << endl;
 	cin >> N;
-	int A[100][100];
-	int B[100][100];
-	int C[100][100];
+	int A[MAX][MAX];
+	int B[MAX][MAX];
+	int C[MAX][MAX];
 
 	//Randomly Generating Numbers for the Matrices
 	for (int i = 0; i < N; i++)

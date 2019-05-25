@@ -7,7 +7,7 @@
 using namespace std;
 
 // Initialize values.
-#define MAX  100
+#define MAX  825
 int N;
 int A[MAX][MAX];
 int B[MAX][MAX];
@@ -15,7 +15,7 @@ int C[MAX][MAX];
 int step_i = 0;
 
 // Determine Max Threads, #define would probably work better, but the amount of threads may change and locking in a solution that is too high for one machine over the other can overwork a system.
-const unsigned int MAX_THREADS = std::thread::hardware_concurrency();
+const unsigned int MAX_THREADS = 4; // std::thread::hardware_concurrency();
 
 //Function to preform Matrix Multiplication
 void* multi(void* arg)
